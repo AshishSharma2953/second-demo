@@ -19,16 +19,13 @@ body {
 }
 
 .mainContainer {
-    height: 75vh;
-    padding: 50px 0 35px 0;
-
+    padding-top: 25px;
+    height: 75vh;    
 }
 
 .top-h1 {
     background-image: url(../Images/top-h1.jpg);
     height: 15vh;
-
-
 }
 
 .top-h1 h1 {
@@ -41,17 +38,14 @@ body {
 
 }
 
-
-
-
-.logIncontainer {
-    
+.logIncontainer { 
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.725);
     border-radius: 10px;
-    width: 25vw;
+    width: 25rem;
+    padding: 25px;
     margin: auto;
     border: 1px solid black;
     box-shadow: 8px 8px 10px 0px;
@@ -92,10 +86,6 @@ input:focus {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-/* 
-.fa-regular{
-    margin-top: 25px;
-} */
 
 .logIncontainer form .forgotPassword {
     right: 0rem;
@@ -110,7 +100,6 @@ input:focus {
     flex-direction: column;
     padding-bottom: .8rem;
 }
-
 
 .formBottom {
     text-align: center;
@@ -142,14 +131,11 @@ input:focus {
     color: #fff;
 }
 
-
-
 #signUp {
     font-size: 1rem;
 }
 
 #signUp span a {
-    /* font-size: 1rem; */
     color: red;
 }
 
@@ -168,8 +154,6 @@ input:focus {
     cursor: pointer;
 }
 
-
-
 .logIncontainer form .userArea fa-regular {
     position: absolute;
     top: 50%;
@@ -177,17 +161,11 @@ input:focus {
     transform: translateY(-50%);
 }
 
-
-
-
-
-@media screen and (max-width:500px) {
+@media screen and (max-width:1200px) {
 
     .logIncontainer {
-        /* padding: 0.5rem 1rem; */
         width: 25rem;
-        /* margin: 0.2rem; */
-        width: 40vh;
+       
     }
 
     .toggle {
@@ -198,33 +176,46 @@ input:focus {
 
 }
 
+@media screen and (max-width:500px) {
 
+    .logIncontainer {
+        padding: 0.5rem 1rem;
+        width: 20rem;
+    }
 
+    .toggle {
+        margin: 0;
+        padding-left: 2rem;
+        cursor: pointer;
+    }
 
-
+}
 
 @media screen and (max-width:400px) {
     .logIncontainer {
-        width: 30vw;
+        width: 15rem;
     }
 
     .logIncontainer form input {
-        font-weight: 900;
-        font-size: 0.7rem;
+        font-weight: 500;
+        font-size: 0.6rem;
     }
 }
-
 
 @media screen and (max-width:280px) {
 
     .logIncontainer {
         padding: 0.5rem 1rem;
-        width: 20vh;
+        width: 12rem;
+    }
+
+    .logIncontainer form i {
+        font-size: 0.7rem;
     }
 
     .logIncontainer form input {
-        font-weight: 800;
-        font-size: 0.6rem;
+        font-weight: 700;
+        font-size: 0.4rem;
     }
 
 }
